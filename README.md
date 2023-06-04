@@ -17,6 +17,7 @@ Next, the Change Data Feed (CDF) feature in Databricks was leveraged to efficien
 The merge function was utilized again to develop a SCD2 table. In a SCD2 table, whenever a value changed, the current record was closed, and a new record was created with updated data values, accompanied by effective time and expiration time details for accurate time-based analysis. 
 
 The nature of SCD2 table helps enhance future data process performance by processing only row-level changes, creating materialized views for up-to-date analytics, transmitting changes to downstream systems, and maintaining an audit trail of all data modifications.
+![SCD1](Image/SCD2.png)
 
 ### Flexibility and Scalability 
 To enhance flexibility and scalability, reusable general-purpose functions were developed to create SCD tables. These functions can be leveraged for similar projects in the future, reducing development time and effort.
